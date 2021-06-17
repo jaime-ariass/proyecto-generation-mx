@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jaimememes/proyecto-generation-mx/issues"
   },
-  "homepage": "https://github.com/jaimememes/proyecto-generation-mx#readme"
+  "homepage": "https://github.com/jaimememes/proyecto-generation-mx#readme",
+  "dependencies": {
+    "nodemailer": "^6.6.1"
+  }
 }
