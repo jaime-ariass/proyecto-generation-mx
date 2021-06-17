@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" media="all" href="/CSS/contact.css" />
+</head>
+<body class="contactBody">
+       
+        <nav class="navbar navbar-expand-lg navbar-fixed-top" style="position: sticky;">
+            <div class="container-fluid" style="position: sticky;">
+                <a class="navbar-brand ms-2" href="#">
+                    <img src="\Recursos\HOME\logoCH.png" alt="" width="40" height="40">
+                </a>
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <div class="navbar navbar-expand-sm" >
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/HTML/index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SUSCRIPCIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EQUIPO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </nav>
+    
+
+        
+
+        <div class="wrapper">
+        
+            <div class="title">
+
+            </div>
+    
+                <form id=formsection class="form">
+           
+                    <input type = "text" id = 'nombre' class="name entry" placeholder="Name">
+                        
+            
+                    <input type = "email" id = 'email' class="email entry" placeholder="Email">
+                
+                    
+                    <input type = "tel" id = 'telefono' class="email entry" placeholder="Phone">
+                
+
+                    <textarea type = "text" id = 'mensaje' class="message entry" placeholder="Message"></textarea>
+                
+                    <button class = "submit entry">Submit</button>
+                </form>
+                <div class="shadow"></div>     
+
+        </div>
+
+   <script>
+       
+       var mainDiv = document.getElementById('formsection');
+       var nombre = mainDiv.children[0]
+       var email = mainDiv.children[1]
+       var phone = mainDiv.children[2]
+       var message = mainDiv.children[3]
+       var datos= [] 
+
+       document.querySelector("button").addEventListener("click", getData)
+       document.querySelector("button").addEventListener("click", validate)
+       
+       function getData(){
+            
+            
+            event.preventDefault();
+            datos.push(nombre.value)
+            datos.push(email.value)
+            datos.push(phone.value)
+            datos.push(message.value)
+                 
+        
+        }
+
+        function validate(){
+
+            var namePrincipal = nombre.value;
+            var emailPrincipal = email.value;
+            var phoneNumber = phone.value;
+            var messagePrincipal = message.value;
+            
+
+            var nameRGEX = /^[a-zA-Z\s]+/; 
+            var emailRGEX = /[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/
+            var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+            var messageRGEX = /[\w]{1,140}/
+
+            var nameResult = nameRGEX.test(namePrincipal);
+            var emailResult = emailRGEX.test(emailPrincipal);
+            var phoneResult = phoneRGEX.test(phoneNumber);
+            var messageResult = messageRGEX.test(messagePrincipal);
+            
+            
+            if(phoneResult == false || nameResult == false || emailResult == false || messageResult == false)
+            {
+                alert("Datos incorrectos");
+                datos.length=0
+            }else{
+                
+                alert("Enviado")
+                console.log(datos)
+            }
+            
+
+        }
+
+
+   </script>
+</body>
+</html>
+  
