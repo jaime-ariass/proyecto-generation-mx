@@ -1,12 +1,66 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario</title>
+  <link rel="stylesheet" media="all" href="contact.css" />
 </head>
-<body>
-   
+<body >
+  <nav class="navbar navbar-expand-lg navbar-fixed-top" style="position: sticky;">
+    <div class="container-fluid" style="position: sticky;">
+       <a class="navbar-brand ms-2" href="#">
+          <img src="Recursos\HOME\logoCH.png" alt="" width="40" height="40">
+       </a>
+       <div class="position-absolute top-50 start-50 translate-middle">
+          <div class="navbar navbar-expand-sm" >
+             <ul class="nav justify-content-center">
+                <li class="nav-item">
+                   <a class="nav-link" href="/index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/aboutus.html">ACERCA DE</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">SUSCRIPCIÓN</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">EQUIPO</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/contact.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">BLOG</a>
+                </li>
+             </ul>
+          </div>
+       </div>   
+    </div>
+ </nav>
+
+  <div class="contactBody">
+        <div class="wrapper">
+        <div class="title">
+           
+      
+        </div>
+      
+
+        <form class="form">
+          <input type="text" class="name entry " placeholder="Your Name"/>
+          
+          <input type="text" class="email entry" placeholder="Email"/>
+          
+          <input type="text" class="email entry" placeholder="Telefono"/>
+          
+          <textarea class="message entry" placeholder="Message"></textarea> 
+          
+          <button class="submit entry" onclick="thanks()">Submit</button>
+        </form>  
+        
+        <div class="shadow"></div>
+      </div>
+    </div>
 </body>
 </html>
