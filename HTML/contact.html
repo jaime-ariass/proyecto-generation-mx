@@ -120,13 +120,24 @@
                 
                 alert("Enviado")
                 console.log(datos)
+                
+                var contactParams = {
+                fromName: namePrincipal,
+                fromEmail: emailPrincipal,
+                fromPhone: phoneNumber,
+                fromMessage: messagePrincipal,
+            };
+            emailjs.send('service_6bqlr4g','template_sglxwf9', contactParams, 'user_ZhjtSfzk5zFv0BZ0VZdUj').then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                console.log('FAILED...', error);
+                });
             }
-            
-
         }
-
-
+        
    </script>
+   
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </body>
 </html>
   
