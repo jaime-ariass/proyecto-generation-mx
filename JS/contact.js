@@ -145,7 +145,7 @@ function showErrorName() {
       messageError.textContent = 'Debe introducir un mensaje';
     } else if(message.validity.tooShort) {
   
-      messageError.textContent = 'El mensaje debe de contener al menos 140 caracteres';
+      messageError.textContent = 'El mensaje debe de contener al menos 8 caracteres';
     }
   
     messageError.className = 'error activo';
