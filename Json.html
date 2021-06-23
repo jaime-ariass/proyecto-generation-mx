@@ -7,45 +7,28 @@
   <title>Document</title>
 </head>
 <body>
+  <script src="ad.js"></script>
+  <div > 
+    <input type="text" id="i1">
+    <input type="text" id="i2">
+    <input type="text" id="i3">
+  </div> 
+  
+<div>
+<h1 id="h1"></h1>
+<h1 id="h2"></h1>
+<h1 id="h3"></h1>
+<h1 id="h4"></h1>
+<h1 id="h5"></h1>
+<h1 id="h6"></h1>
+<h1 id="h7"></h1>
+<h1 id="h8"></h1>
+<h1 id="h9"></h1>
+<h1 id="h10"></h1>
+</div>
 
-  <Script>
-
-var Titulo  = new Array();
-var Precio = new Array();
-var Plataforma   = new Array();
-
-Titulo[0] = "Devil May Cry";
-Titulo[1] = "Halo";
-Titulo[2] = "Half Life";
-
-Precio[0] = "900";
-Precio[1] = "1500";
-Precio[2] = "500";
-
-Plataforma[0] = "Play";
-Plataforma[1] = "Xbox";
-Plataforma[2] = "PC";
-
-var datos  = [];
-var objeto = {};
-
-for(var i= 0; i < Titulo.length; i++) {
-
-    var nombre = Titulo[i];
-
-   datos.push({ 
-        "Titulo"  : Titulo[i],
-        "Precio"  : Precio[i],
-        "Plataforma": Plataforma[i] 
-    });
-}
-
-objeto.datos = datos;
-console.log(JSON.stringify(objeto));
-
-$("#res").text(JSON.stringify(objeto));
-
-  </Script>
+<button id="b1" type="button" class="btn btn-outline-primary" onclick="demo();">Demo</button>
+<button id="b2" type="button" class="btn btn-outline-primary" onclick="Agregar(); alertar(); reset(); mostrar();">Agregar</button>
   
 </body>
 </html>
