@@ -9,8 +9,13 @@
     font-weight: bold;
     font-size: large;
   }
-  span{display: block;}
+  span{
+    display: block;
+  }
   
+  .navbar-nav>li{
+    font-size: 70%;
+  }
 
   .contactBody{
     background-image: url("https://img.freepik.com/vector-gratis/controles-videojuegos-enmarcados-estilo-neon-pared-ladrillo_24908-58914.jpg?size=338&ext=jpg");
@@ -214,6 +219,17 @@
   
 
 @media only screen and (min-width: 1024px){
+  
+  .navbar-brand{
+    position: absolute;
+  }
+  .navbar-nav{
+    margin-left: auto;  
+  }
+
+  .navbar-nav>li{
+    padding-left: 15px;
+  }
   
 
   .contactBody{
