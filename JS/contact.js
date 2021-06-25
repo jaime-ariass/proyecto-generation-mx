@@ -71,12 +71,10 @@ nombre.addEventListener('input', function (event) {
 form.addEventListener('submit', function (event) {
   // si el campo de correo electrónico es válido, dejamos que el formulario se envíe
 
-  if(!email.validity.valid && !nombre.validity.valid && !phone.validity.valid && !message.validity.valid) {
+  if(!email.validity.valid || !nombre.validity.valid || !phone.validity.valid || !message.validity.valid) {
     // Si no es así, mostramos un mensaje de error apropiado
-    showErrorEmail();
-    showErrorName();
-    showErrorPhone();
-    showErrorMessage();
+    
+    messageError.textContent = 'Por favor, verifique su información.';
     // Luego evitamos que se envíe el formulario cancelando el evento
     event.preventDefault();
     
@@ -85,7 +83,7 @@ form.addEventListener('submit', function (event) {
     datos.push(email.value)
     datos.push(phone.value)
     datos.push(message.value)
-    alert('Enviado')
+    messageError.textContent = '¡Gracias! Nos pondremos en contacto pronto con usted.'
     event.preventDefault();
     console.log(datos)
 
@@ -96,15 +94,15 @@ function showErrorEmail() {
   if(email.validity.valueMissing) {
     // Si el campo está vacío
     // muestra el mensaje de error siguiente.
-    emailError.textContent = 'Debe introducir una dirección de correo electrónico.';
+    messageError.textContent = 'Debe introducir una dirección de correo electrónico.';
   } else if(email.validity.typeMismatch) {
     // Si el campo no contiene una dirección de correo electrónico
     // muestra el mensaje de error siguiente.
-    emailError.textContent = 'El valor introducido debe ser una dirección de correo electrónico.';
+    messageError.textContent = 'El valor introducido debe ser una dirección de correo electrónico.';
   } else if(email.validity.tooShort) {
     // Si los datos son demasiado cortos
     // muestra el mensaje de error siguiente.
-    emailError.textContent = 'El correo electrónico debe tener al menos ${ email.minLength } caracteres; ha introducido ${ email.value.length }.';
+    messageError.textContent = 'El correo electrónico debe tener al menos ' + email.minLength + ' caracteres; ha introducido ' + email.value.length + '.';
   }
 
   // Establece el estilo apropiado
@@ -114,10 +112,10 @@ function showErrorEmail() {
 function showErrorName() {
     if(nombre.validity.valueMissing) {
 
-      nameError.textContent = 'Debe introducir un nombre.';
-    } else if(nombre.validity.typeMismatch) {
+      messageError.textContent = 'Debe introducir un nombre.';
+    } else if(nombre.validity.patternMismatch) {
   
-      nameError.textContent = 'El valor introducido debe ser una dirección de correo electrónico.';
+      message.textContent = 'Formato no válido';
     } 
     
   
@@ -127,13 +125,13 @@ function showErrorName() {
   function showErrorPhone() {
     if(phone.validity.valueMissing) {
 
-      phoneError.textContent = 'Debe introducir un número telefónico válido';
-    } else if(phone.validity.typeMismatch) {
+      messageError.textContent = 'Debe introducir un número telefónico';
+    } else if(phone.validity.patternMismatch) {
   
-      phoneError.textContent = 'El valor introducido debe ser una dirección de correo electrónico.';
+      messageError.textContent = 'Debe introducir un número telefónico válido'
     } else if(phone.validity.tooShort) {
   
-      phoneError.textContent = 'El correo electrónico debe tener al menos ${ email.minLength } caracteres; ha introducido ${ email.value.length }.';
+      messageError.textContent = 'El número telefónico debe contener al menos 10 dígitos';
     }
   
     phoneError.className = 'error activo';
@@ -143,13 +141,9 @@ function showErrorName() {
     if(message.validity.valueMissing) {
 
       messageError.textContent = 'Debe introducir un mensaje';
-    } else if(message.validity.tooShort) {
-  
-      messageError.textContent = 'El mensaje debe de contener al menos 8 caracteres';
-    }
+    } 
   
     messageError.className = 'error activo';
   }
-
 
 

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 360px){
 
   a:hover{
     text-decoration: none;
@@ -9,7 +9,8 @@
     font-weight: bold;
     font-size: large;
   }
-
+  span{display: block;}
+  
 
   .contactBody{
     background-image: url("https://img.freepik.com/vector-gratis/controles-videojuegos-enmarcados-estilo-neon-pared-ladrillo_24908-58914.jpg?size=338&ext=jpg");
@@ -46,7 +47,7 @@
     text-align: center; 
     box-shadow: 0px 0px 20px 5px #AAA; 
     border-radius: 10px;  
-    width: 45%; 
+    width: 400px; 
     height: 500px;
     margin: 30px auto 0 auto;
     padding: 5px 5px;  
@@ -193,10 +194,10 @@
   /* Este es el diseño para nuestros mensajes de error */
   .error {
     width : 100%;
-    padding: 0;
-  
-    font-size: 80%;
-    color: white;
+    padding: 0px;
+    
+    font-size: 90%;
+    color: #d600ff;
     background-color: black;
     border-radius: 0 0 5px 5px;
     font-family: 'Press Start 2P', cursive;
@@ -204,39 +205,12 @@
   }
   
   .error.active {
+  
     padding: 0.3em;
   }
 }
 
- /* Este es nuestro diseño para los campos no válidos */
-  input:invalid{
-    border-color: black;
-    
-  }
-  
-  input:focus:invalid {
-    outline: none;
-  }
-  
-  /* Este es el diseño para nuestros mensajes de error */
-  .error {
-    width : 100%;
-    padding: 0;
-  
-    font-size: 80%;
-    color: white;
-    background-color: black;
-    border-radius: 0 0 5px 5px;
-  
-    box-sizing: border-box;
-  }
-  
-  .error.active {
-    padding: 0.3em;
-  }
 
- /* Menú Hamburguesa */
-  
   
 
 @media only screen and (min-width: 1024px){
@@ -402,5 +376,8 @@
       opacity: 0.8;
       width: 50%;
     }
+  }
+  .error{
+    font-size: 100%;
   }
 }
