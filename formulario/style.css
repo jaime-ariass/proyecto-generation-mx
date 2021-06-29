@@ -1,0 +1,58 @@
+:root{
+   --color-dark: #15181f;
+   --color-dark-x: #2d343f;
+   --color-dark-xx: #1f232b;
+   --color-light: #ffffff;
+   --color-gris: #f5f6f8;
+}
+
+body{
+   font-size: 'sanf serif';
+   font-size: 1.1rem;
+   font-weight: 300;
+   background-color: var(--color-gris);
+   color: var(--color-light);
+   letter-spacing: .05rem;
+
+}
+
+.bg-light{
+   background-color: var(--color-light) !important;
+}
+
+.bg-dark {
+   background-color: var(--color-dark) !important;
+}
+
+.pad-6{
+   padding: 4rem 7rem;
+}
+
+.contact-box{
+   padding: 3rem;
+}
+
+.btn {
+   font-weight: 400;
+   padding: 1rem 2rem;
+   border-radius: 5rem;
+   min-width: 10rem;
+}
+
+.btn-outline-dark{
+   border: 2px solid var(--color-dark-xx);
+}
+
+.form-control{
+   background-color: var(--color-dark-xx);
+   border: 2px solid var(--color-dark-xx);
+   border-radius: .2rem;
+   padding: 1.3rem 1rem;
+}
+
+.register-bg{
+   background-image: none;
+   background-size: cover;
+   background-repeat: none;
+   min-height: 100vh;
+}
