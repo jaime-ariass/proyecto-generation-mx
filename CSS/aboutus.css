@@ -1,5 +1,9 @@
 .principal{
     background-image: url(https://cdn.wallpapersafari.com/72/18/dFGDRT.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 #info{
@@ -13,3 +17,5 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px rgb(255, 81, 0), 0 
 color: #FFFFFF;
 text-align: center;
 }
+
+

@@ -7,24 +7,18 @@ var Plataforma
 var Titulo       = new Array();
 var Precio       = new Array();
 var Plataforma   = new Array();
-
 Titulo[0] = "Devil May Cry";
 Titulo[1] = "Halo";
 Titulo[2] = "Half Life";
-
 Precio[0] = "900";
 Precio[1] = "1500";
 Precio[2] = "500";
-
 Plataforma[0] = "Play";
 Plataforma[1] = "Xbox";
 Plataforma[2] = "PC";
-
 var datos  = [];
 var objeto = {};
-
 for(var i= 0; i < Titulo.length; i++) {
-
     var nombre = Titulo[i];
     
    datos.push({ 
@@ -35,18 +29,9 @@ for(var i= 0; i < Titulo.length; i++) {
         "Plataforma": Plataforma[i] 
     });
 }
-
-
-
-
-
-
-
 objeto.datos = datos;
 console.log(JSON.stringify(objeto));
-
 //$("#res").text(JSON.stringify(objeto));
-
 }
  */
 function Agregar() {
