@@ -7,6 +7,10 @@
    <title></title>
    <link rel="stylesheet" media="all" href="/CSS/contact.css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<<<<<<< HEAD
+=======
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+>>>>>>> Ricardo
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -14,44 +18,47 @@
 </head>
 <body class="contactBody">
 
-        <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark position-sticky">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand ms-2" href="#">
                     <img src="\Recursos\HOME\logoCH.png" alt="" width="40" height="40">
                 </a>
+<<<<<<< HEAD
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <div class="navbar navbar-expand-sm" >
                         <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                            <a class="nav-link" href="/HTML/index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">SUSCRIPCION</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">EQUIPO</a>
-                            </li>
-                            <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/products.html">SUSCRIPCION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/equipo.html">EQUIPO</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
-                            </li>
-                            <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>       
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
             </div>
         </nav>
-        
-           
-            
-        
-    
+>>>>>>> Ricardo
 
-        
+
+     
+
 
         <div class="wrapper">
             
@@ -63,15 +70,15 @@
                 <form novalidate id=formsection class="form">
            
                     <input type = "text" id = 'nombre' name="nombre" required minlength="8" class="name entry" placeholder="Name">
-                    <span class="error" aria-live="polite"></span>
+                    
             
                     <input type = "email" id = 'email' name="email" required minlength="8" class="email entry" placeholder="Email">
-                    <span class="error" aria-live="polite"></span>
                     
-                    <input type = "tel" id = 'telefono' name="telefono" required minlength="8" class="email entry" placeholder="Phone">
-                    <span class="error" aria-live="polite"></span>
+                    
+                    <input type = "tel" id = 'telefono' name="telefono" pattern="[0-9]{3}" required minlength="10" class="email entry" placeholder="Phone">
+                    
 
-                    <textarea type = "text" id = 'mensaje' name="message" required minlength="8" class="message entry" placeholder="Message"></textarea>
+                    <textarea type = "text" id = 'mensaje' name="message" class="message entry" placeholder="Message"></textarea>
                     <span class="error" aria-live="polite"></span>
                 
                     <button class = "submit entry">Submit</button>
@@ -81,36 +88,8 @@
         </div>
 
 <script src="/JS/contact.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-     
-       
-       var datos= [] 
-
-      
-       document.querySelector("button").addEventListener("click", validate)
-   
-
-        function validate(){
-
-            
-
-            var nameRGEX = /^[a-zA-Z\s]+/; 
-            var emailRGEX = /[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/
-            var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-            var messageRGEX = /[\w]{1,140}/
-
-           
-            
-            
-            
-
-        }
-
-
-
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </body>
 </html>
   
