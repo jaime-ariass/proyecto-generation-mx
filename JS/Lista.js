@@ -1,13 +1,5 @@
 function addItem(item){
-    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 40em;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top img-fluid h-100" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Agregar </a></div>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
+    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 40em;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100" alt="image">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 }
@@ -59,3 +51,5 @@ addItem({'name':'Halo: The Master Chief Collection',
     addItem({'name':'Star Wars™ Battlefront™ II',
     'img':'https://images2.alphacoders.com/823/thumb-1920-823125.png',
     'description':'El emperador Palpatine planea atraer a una desprevenida flota de la Alianza Rebelde a una trampa usándose a sí mismo y la segunda Estrella de la Muerte, construida sobre la luna forestal de Endor, como cebo, buscando aplastar la Rebelión contra su Imperio Galáctico de una vez por todas.'})
+
+
