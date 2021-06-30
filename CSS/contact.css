@@ -18,7 +18,7 @@
   }
 
   .contactBody{
-    background-image: url("https://img.freepik.com/vector-gratis/controles-videojuegos-enmarcados-estilo-neon-pared-ladrillo_24908-58914.jpg?size=338&ext=jpg");
+    background-image: url(/Recursos/FormularioFondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:300px;
@@ -39,7 +39,7 @@
   #title-Tag-Line{
       font-size: 20px;
   }
-/* This will center the form */
+/* Posicion del formulario */
   .wrapper {
     width: 100%;
     height: 100%;
@@ -137,7 +137,7 @@
     font-family: 'Press Start 2P', cursive;  
   }
 
-  /* Shadow to make it look like form is floating  */
+  /* Sombra que asemeja que esta flotando*/
   .shadow{
     box-shadow: 0px 0px 60px 5px #AAA;
     opacity: 0.5;
@@ -233,7 +233,7 @@
   
 
   .contactBody{
-    background-image: url("https://img.freepik.com/vector-gratis/controles-videojuegos-enmarcados-estilo-neon-pared-ladrillo_24908-58914.jpg?size=338&ext=jpg");
+    background-image: url("/Recursos/FormularioFondo.jpg");
     background-size: cover;
     background-attachment: fixed;
     height:300px;
