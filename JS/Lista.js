@@ -57,7 +57,7 @@ addItem({'name':'Halo: The Master Chief Collection',
  // Agrega el Registro que se tenia en Backup  base
     function addBase(){
         
-        alert('Hola');
+        
         
         addItem({'name':'Los Sims™ 4 Edición Fiesta Deluxe',
         'img':'https://media.contentapi.ea.com/content/dam/eacom/SIMS/brand-refresh-assets/images/2019/07/ts4-featured-image-base-refresh.png.adapt.crop191x100.1200w.png',
