@@ -1,13 +1,48 @@
+a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #39ff14;
+  }
+  a{
+    animation: color-change 30s infinite;    
+    font-weight: bold;
+    font-size: large;
+  }
+  span{
+    display: block;
+  }
+  
+  .navbar-nav>li{
+    font-size: 70%;
+  }
+
+  .contactBody{
+    
+    background-size: cover;
+    background-attachment: fixed;
+    height:300px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.contactBody .banner{
+  height: 20%;
+  
+}
+
+
+
+
+
+
 /* body{
     background-image: url(/Recursos/wp2241795-nintendo-switch-wallpapers.jpg);
     background-size: cover;
 } */
-
-.contenedor .video{
-    /* background-image: url(/Recursos/wp2241795-nintendo-switch-wallpapers.jpg); */
-    opacity: 1;
-    background-color: rgb(179, 140, 140);
+.contenedor{
+  
+  opacity: 0.9;
 }
+
+
 
 /* .contenedor .video iframe{
     align-content: center;

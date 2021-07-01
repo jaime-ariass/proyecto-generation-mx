@@ -7,24 +7,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
    <link rel="stylesheet" href="/CSS/login.css">
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body>
+<body class="contactBody">
+
+   <!-- BArra de nvegacion, por que alguien no la comento,
+   agregar clase contactBody para la fuente de la letra 
+   BTW: Gracias Miriam ¬¬ 
+   -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#">
+              <img src="\Recursos\HOME\logoCH.png" alt="" width="40" height="40">
+          </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                  
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/HTML/products.html">SUSCRIPCION</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/HTML/equipo.html">EQUIPO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/HTML/formulario.html">BLOG</a>
+                  </li>
+                  
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+
+
+   <!-- Crear divs para video y formulario -->
+
+   <div class="banner col-lg-12 row">
+       <h1>hola</h1>
+         
+      
+   
+   </div>
    <div class="contenedor row">
-      <div class="video col-lg-2" style="padding-left: 0px" >
-         <img src="/Recursos/wp2241795-nintendo-switch-wallpapers.jpg" alt="No salio" style="background-size: cover;" width="647" height="406">
+       
+      <div class="video col-lg-2 col-xl-2 col-md-2" style="padding-left: 5px" >
+         <img src="/Recursos/panto.png" alt="No salio" style="background-size: cover;" width="420%" height="706">
       </div>
-      <div class="col-lg-4 " style="padding: 0px;">
-         <iframe width="647" height="406" src="https://www.youtube.com/embed/txtmIkfXvO0?controls=0&amp; start=1; "autoplay = 1;  title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-lg-4 col-xl-4 col-md-4" style="padding: 0px; top:130px;">
+         <iframe width="100%" heigth="100%" id="ytplayer" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/txtmIkfXvO0?autoplay=1&mute=1&origin=http://example.com" frameborder="0"> </iframe>
       </div>
-      <div class="video col-lg-2" style="padding-left: 0px">
-         <img src="/Recursos/wp2241795-nintendo-switch-wallpapers.jpg" alt="No salio" style="background-size: cover;" width="647" height="406">
+      <div class="video col-lg-2 col-xl-2 col-md-2" style="padding-left: 0px">
+         
       </div>
 
-      <div class="sesion col-lg-4"></div>
+      <div class="sesion col-lg-4 col-xl-4 col-md-4"></div>
    </div>
 </body>
 </html>
