@@ -85,7 +85,9 @@ form.addEventListener('submit', function (event) {
     datos.push(message.value)
     messageError.textContent = '¡Gracias! Nos pondremos en contacto pronto con usted.'
     event.preventDefault();
-    console.log(datos)
+    console.log(datos);
+
+    
 
   }
 });

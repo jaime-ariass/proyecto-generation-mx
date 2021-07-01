@@ -23,10 +23,16 @@
     background-attachment: fixed;
     height:300px;
     font-family: 'Press Start 2P', cursive;
-    
-
 
 }
+/* Cambio de colores automaticos */
+@keyframes color-change {
+  0% { color: #DF1B76; }
+  50% { color: #2DD7BB; }
+  100% { color: #DF1B76; }
+}
+
+
   .title{
     margin: 0 auto;
     width: 50%;
@@ -181,11 +187,7 @@
     }
   }
 
-  @keyframes color-change {
-    0% { color: #DF1B76; }
-    50% { color: #2DD7BB; }
-    100% { color: #DF1B76; }
-  }
+  
 
    /* Este es nuestro diseño para los campos no válidos */
    input:invalid{
@@ -291,21 +293,21 @@
       font-size: 20px;
   }
   .name:hover{
-    background-color: #cc0c29;
+    background-color: #5d67f1;
     border-bottom: 5px solid #B2175F;
     height:50px;
     width:450px;
   }
 
   .email {
-    background-color: rgba(134, 122, 112, 1);
+    background-color: #4a4c4e;
     border-bottom: 5px solid #502789;
     height:60px;
     width:400px;
     
   }
   .email:hover{
-    background-color: #7239C1;  
+    background-color: #cc0c29; 
     border-bottom: 5px solid #502789;
     height:60px;
     width:450px;
@@ -321,7 +323,7 @@
 
   .message:hover{
     background-color: #5d67f1;
-    border-bottom: 5px solid #5d67f1;
+    border-bottom: 5px solid #B2175F;
     height: 150px;
     width:450px;
   }

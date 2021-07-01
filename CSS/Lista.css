@@ -1,7 +1,67 @@
-.prodprinci{
-  background-image: url("https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 
+@media only screen and (min-width: 360px){    
+  #list-items{
+      background-color: black;
+  }
+
+  a:hover{
+      text-decoration: none;
+      border-bottom: 3px solid #39ff14;
+  }
+  
+  a{
+      animation: color-change 30s infinite;    
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Press Start 2P', cursive;
+  }
+
+  @keyframes color-change {
+      0% { color: #DF1B76; }
+      50% { color: #2DD7BB; }
+      100% { color: #DF1B76; }
+    }
+
+  #iconsElements{
+        
+      flex-direction: column;
+      align-items: center;
+
+    }
+  
+  #iconsElements img{
+      margin-bottom: 50px;
+      
+  }
+
+}
+@media only screen and (min-width: 1024px){
+  .navbar-brand{
+      position: absolute;
+  }
+  .navbar-nav{
+      margin-left: auto;  
+  }
+
+  .navbar-nav>li{
+      font-family: 'Press Start 2P', cursive;
+      padding-left: 15px;
+      
+  }
+
+  #iconsElements{
+        
+      flex-direction: row;       
+
+  }
+
+  #iconsElements img{
+      margin-left: 50px;
+      margin-right: 80px;
+      
+  }
+}
+
+body .contacBody{
+  background-color: black;
 }
