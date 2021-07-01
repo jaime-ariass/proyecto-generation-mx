@@ -48,7 +48,7 @@
 
 /* form animation starts */
   .form {
-    background: #EBEBEB;
+    background: #908c8c;
     text-align: center; 
     box-shadow: 0px 0px 20px 5px #AAA; 
     border-radius: 10px;  
@@ -57,6 +57,7 @@
     margin: 30px auto 0 auto;
     padding: 5px 5px;  
     animation: bounce 1.5s infinite;
+    opacity: 0.9;
   }
 
   .form:hover{
@@ -265,7 +266,7 @@
 
 /* form animation starts */
   .form {
-    background: #EBEBEB;
+    background: #908c8c;
     text-align: center; 
     box-shadow: 0px 0px 20px 5px #AAA; 
     border-radius: 10px;  
@@ -278,7 +279,7 @@
   }
 
 .name { 
-    background-color: #DF1B76;
+    background-color: #4a4c4e;
     border-bottom: 5px solid #B2175F;
     color: white;
     height:50px;
@@ -290,14 +291,14 @@
       font-size: 20px;
   }
   .name:hover{
-    background-color: #DF1B76;
+    background-color: #cc0c29;
     border-bottom: 5px solid #B2175F;
     height:50px;
     width:450px;
   }
 
   .email {
-    background-color: #7239C1;  
+    background-color: rgba(134, 122, 112, 1);
     border-bottom: 5px solid #502789;
     height:60px;
     width:400px;
@@ -311,7 +312,7 @@
    
   }
   .message {   
-    background-color: rgb(230, 108, 15);
+    background-color: #4a4c4e;
     border-bottom: 5px solid rgb(195, 35, 17);
     overflow: hidden;
     height: 150px;  
@@ -319,8 +320,8 @@
   }
 
   .message:hover{
-    background-color: #2DD7BB;
-    border-bottom: 5px solid #2BB09A;
+    background-color: #5d67f1;
+    border-bottom: 5px solid #5d67f1;
     height: 150px;
     width:450px;
   }
@@ -366,9 +367,9 @@
     padding:10px;
     width:150px;
     color: white;
-    background-color: #EE78D1;  
+    background-color: #1f8805;  
     border: none;
-    border-bottom: 5px solid #CB64B2; 
+    border-bottom: 5px solid #60e43f; 
     margin-top: 150px; 
 
   }

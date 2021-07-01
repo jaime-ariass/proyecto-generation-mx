@@ -1,0 +1,22 @@
+/* body{
+    background-image: url(/Recursos/wp2241795-nintendo-switch-wallpapers.jpg);
+    background-size: cover;
+} */
+
+.contenedor .video{
+    /* background-image: url(/Recursos/wp2241795-nintendo-switch-wallpapers.jpg); */
+    opacity: 1;
+    background-color: rgb(179, 140, 140);
+}
+
+/* .contenedor .video iframe{
+    align-content: center;
+    align-items: center;
+    position: fixed;
+} */
+.contenedor .sesion{
+    /* background-image: url(/Recursos/wp2241795-nintendo-switch-wallpapers.jpg); */
+
+    background-color: black;
+    opacity: 0.5;
+}

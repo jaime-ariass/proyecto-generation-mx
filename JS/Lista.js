@@ -1,8 +1,8 @@
-function addItem(item){
+ function addItem(item){
     const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 40em;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100" alt="image">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
-}
+} 
 // Formato Json //
 addItem({'name':'Devil May Cry 5: Special Edition',
     'img':'https://www.tuplaystation.es/wp-content/uploads/2020/10/devil-may-cry-v-special-edtion-principal.jpg',
@@ -52,4 +52,28 @@ addItem({'name':'Halo: The Master Chief Collection',
     'img':'https://images2.alphacoders.com/823/thumb-1920-823125.png',
     'description':'El emperador Palpatine planea atraer a una desprevenida flota de la Alianza Rebelde a una trampa usándose a sí mismo y la segunda Estrella de la Muerte, construida sobre la luna forestal de Endor, como cebo, buscando aplastar la Rebelión contra su Imperio Galáctico de una vez por todas.'})
 
+    
 
+ 
+    function addBase(){
+        /* const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 40em;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100" alt="image">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
+        const itemsContainer = document.getElementById("list-items");
+        itemsContainer.innerHTML += itemHTML; */
+        addItem({'name':'Los Sims™ 4 Edición Fiesta Deluxe',
+        'img':'https://media.contentapi.ea.com/content/dam/eacom/SIMS/brand-refresh-assets/images/2019/07/ts4-featured-image-base-refresh.png.adapt.crop191x100.1200w.png',
+        'description':'¡Convierte a tus Sims en el alma de la fiesta con Los Sims™ 4 Edición Fiesta Deluxe! Explora el lado más aventurero de la mente, el cuerpo y el corazón de tus Sims con espectáculos de luces láser, disfraces descabellados, la barra tiki Chispas y divertidos gorros de animales.'});
+        
+        alert('Hola');
+    }
+
+    function addVIP(){
+        addItem({'name':'Los Sims™ 4 Edición Fiesta Deluxe',
+        'img':'https://media.contentapi.ea.com/content/dam/eacom/SIMS/brand-refresh-assets/images/2019/07/ts4-featured-image-base-refresh.png.adapt.crop191x100.1200w.png',
+        'description':'¡Convierte a tus Sims en el alma de la fiesta con Los Sims™ 4 Edición Fiesta Deluxe! Explora el lado más aventurero de la mente, el cuerpo y el corazón de tus Sims con espectáculos de luces láser, disfraces descabellados, la barra tiki Chispas y divertidos gorros de animales.'});
+    }
+    
+        
+        
+
+
+        
