@@ -77,26 +77,14 @@
       font-size: 20px;
   }
   .name:hover{
+    opacity: 0.9;
     background-color: #DF1B76;
     border-bottom: 5px solid #B2175F;
     height:40px;
     width:380px;
+    opacity: 0.9;
   }
-
-  .email {
-    background-color: #7239C1;  
-    border-bottom: 5px solid #502789;
-    height:50px;
-    width:300px;
-    
-  }
-  .email:hover{
-    background-color: #7239C1;  
-    border-bottom: 5px solid #502789;
-    height:50px;
-    width:380px;
-   
-  }
+  
   .message {   
     background-color: rgb(230, 108, 15);
     border-bottom: 5px solid rgb(195, 35, 17);
@@ -106,10 +94,12 @@
   }
 
   .message:hover{
+    opacity: 0.9;
     background-color: #2DD7BB;
     border-bottom: 5px solid #2BB09A;
     height: 100px;
     width:370px;
+
   }
 
   .submit{
@@ -217,7 +207,7 @@
 }
 
 
-  
+ /* Tamaño de la pantalla del dispositivo hasta 1024 px */
 
 @media only screen and (min-width: 1024px){
   
@@ -291,25 +281,11 @@
       font-size: 20px;
   }
   .name:hover{
+    opacity: 0.9;
     background-color: #cc0c29;
     border-bottom: 5px solid #B2175F;
     height:50px;
     width:450px;
-  }
-
-  .email {
-    background-color: rgba(134, 122, 112, 1);
-    border-bottom: 5px solid #502789;
-    height:60px;
-    width:400px;
-    
-  }
-  .email:hover{
-    background-color: #7239C1;  
-    border-bottom: 5px solid #502789;
-    height:60px;
-    width:450px;
-   
   }
   .message {   
     background-color: #4a4c4e;
@@ -320,6 +296,7 @@
   }
 
   .message:hover{
+    opacity: 0.9;
     background-color: #5d67f1;
     border-bottom: 5px solid #5d67f1;
     height: 150px;
@@ -337,7 +314,7 @@
   }
 
   .submit:hover{
-    border-bottom: 5px solid #CB64B2;  
+    border-bottom: 5px solid #2c20db;  
     box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
   }
 
