@@ -1,8 +1,22 @@
 
 @media only screen and (min-width: 360px){    
-  #list-items{
-      background-color: black;
+  body{
+    background-image: url("/Recursos/bg-lista.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
   }
+
+  #card{
+    background-image: url("/Recursos/bg-lista.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+
+ 
 
   a:hover{
       text-decoration: none;
@@ -22,17 +36,7 @@
       100% { color: #DF1B76; }
     }
 
-  #iconsElements{
-        
-      flex-direction: column;
-      align-items: center;
-
-    }
-  
-  #iconsElements img{
-      margin-bottom: 50px;
-      
-  }
+ 
 
 }
 @media only screen and (min-width: 1024px){
@@ -49,19 +53,5 @@
       
   }
 
-  #iconsElements{
-        
-      flex-direction: row;       
+} 
 
-  }
-
-  #iconsElements img{
-      margin-left: 50px;
-      margin-right: 80px;
-      
-  }
-}
-
-body .contacBody{
-  background-color: black;
-}
