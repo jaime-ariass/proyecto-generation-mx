@@ -14,7 +14,6 @@ const message = document.getElementById('mensaje')
 
 const messageError = document.querySelector('#mensaje + span.error');
 
-var datos= []; 
 
 // --------- Validación de nombre.
 
@@ -143,13 +142,10 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     
   }else{
-    datos.push(nombre.value)
-    datos.push(email.value)
-    datos.push(phone.value)
-    datos.push(message.value)
+ 
     messageError.textContent = '¡Gracias! Nos pondremos en contacto pronto con usted.'
     event.preventDefault();
-    console.log(datos);
+   
 
     var contactParams = {
     fromName: nombre.value,
