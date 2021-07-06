@@ -6,7 +6,7 @@ function encriptar(){
 }
 
 function desencriptar(){
-   var password = document.getElementById("txtContrasena").value; // weno esto no se necesita aqui creo 
+   // var password = document.getElementById("txtContrasena").value; // Esto no se necesita aqui creo, si no funciona descomentar
    passwordDenc = atob(passwordEnc);
    alert(passwordDenc);
 }
