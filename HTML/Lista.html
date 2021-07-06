@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata|Roboto:light|Work Sans:regular" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous" />
-
-   <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
    <link href="/CSS/Lista.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <title>Top 10</title>
+    
+  </head>
 
-   <title>Top 10</title>
-
-</head>
-
-<body class="prodprinci">
-
-   <!--Nav bar, logo - items-->
-   <nav class="navbar navbar-expand-lg navbar-fixed-top" style="position: sticky;">
-      <div class="container-fluid" style="position: sticky;">
-         <a class="navbar-brand ms-2" href="#">
-            <img src="\Recursos\HOME\logoCH.png" alt="" width="40" height="40">
-         </a>
-         <div class="position-absolute top-50 start-50 translate-middle">
-            <div class="navbar navbar-expand-sm">
-               <ul class="nav justify-content-center">
+  <body>
+  
+     <!--Nav bar, logo - items-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+         <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#">
+               <img src="\Recursos\HOME\logoCH.png" alt="" width="50" height="40">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+      
                   <li class="nav-item">
-                     <a class="nav-link" href="/HTML/index.html">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
+                        <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">SUSCRIPCIÓN</a>
+                        <a class="nav-link" href="/HTML/Lista.html">SUSCRIPCION</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">EQUIPO</a>
+                        <a class="nav-link" href="/HTML/equipo.html">EQUIPO</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
+                        <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="/HTML/formulario.html">DB</a>
                   </li>
+                  
+      
                </ul>
+                  <li class="nav-item">
+                        <a class="nav-link" href="/HTML/login.html">LOGIN</a>
+                  </li>
+                 
             </div>
          </div>
-      </div>
-   </nav>
-   <!-- Lista-->
-   <!-- <div id="list-items">
+      </nav>
+   
+<!-- Lista-->
+<!-- <div id="list-items">
    <div class="container">
       <div class="title">
          <h1>Top</h1>
@@ -70,27 +76,31 @@
    </div>
 </div>
  -->
-   <div id="list-items" class="row justify-content-center">
-      <div class="card text-center">
-         <div class="col-md-4">
-            <script src="/JS/Lista.js"></script>
-            <!-- <script src="/JS/addBase.js"></script> -->
-         </div>
-      </div>
+<div id="list-items" class="row justify-content-center">
+   <div id="card" class="card text-center mt-5">
+      <div class="col-md-4 col-lg-4 col-sm-4 col-xl-4" >
+         <script src="/JS/Lista.js"></script>
+         <!-- <script src="/JS/addBase.js"></script> -->
+         
+      </div> 
    </div>
+</div>
 
-
-
+<button id="b1" type="button" class="btn btn-primary btn-lg active" onclick="addBase();">Add</button>
 
 
    <button id="b1" type="button" class="btn btn-primary btn-lg active" onclick="addBase();">More</button>
 
    <!-- Option 1: Bootstrap Bundle with Popper -->
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-      </script>
-
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    >
+  </script>
 
 </body>
 

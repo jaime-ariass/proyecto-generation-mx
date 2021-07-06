@@ -1,21 +1,85 @@
-.principal{
+/* .principal{
     background-image: url(https://cdn.wallpapersafari.com/72/18/dFGDRT.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     
+} */
+
+
+@media only screen and (min-width: 360px){ 
+  p{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    font-size: 0.5cm;
 }
 
-#info{
-    color:yellowgreen;
-}
-
-h1{
+  h1{
     color: #FFFFFF;
 
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px rgb(255, 81, 0), 0 -18px 40px #F00;
-color: #FFFFFF;
-text-align: center;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px rgb(255, 81, 0), 0 -18px 40px #F00;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .contactBody{
+    background-image: url(https://cdn.wallpapersafari.com/72/18/dFGDRT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  a:hover{
+      text-decoration: none;
+      border-bottom: 3px solid #39ff14;
+  }
+  a{
+      animation: color-change 30s infinite;    
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Press Start 2P', cursive;
+  }
+
+  @keyframes color-change {
+      0% { color: #DF1B76; }
+      50% { color: #2DD7BB; }
+      100% { color: #DF1B76; }
+    }
+
+  #iconsElements{
+        
+      flex-direction: column;
+      align-items: center;
+
+    }
+  
+  #iconsElements img{
+      margin-bottom: 50px;
+      
+  }
+
 }
+@media only screen and (min-width: 1024px){
+  .navbar-brand{
+      position: absolute;
+  }
+  .navbar-nav{
+      margin-left: auto;  
+  }
 
+  .navbar-nav>li{
+      font-family: 'Press Start 2P', cursive;
+      padding-left: 15px;
+      
+  }
 
+  #iconsElements{
+        
+      flex-direction: row;       
+
+  }
+
+  #iconsElements img{
+      margin-left: 50px;
+      margin-right: 80px;
+      
+  }
+}

@@ -84,23 +84,6 @@
     width:380px;
     opacity: 0.9;
   }
-  
-  .message {   
-    background-color: rgb(230, 108, 15);
-    border-bottom: 5px solid rgb(195, 35, 17);
-    overflow: hidden;
-    height: 100px;  
-    width:300px;
-  }
-
-  .message:hover{
-    opacity: 0.9;
-    background-color: #2DD7BB;
-    border-bottom: 5px solid #2BB09A;
-    height: 100px;
-    width:370px;
-
-  }
 
   .submit{
     border-radius:5px;
