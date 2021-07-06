@@ -150,6 +150,15 @@ h2{
 
   }
 
+  /* .submit2{
+    border-radius:5px;
+    background-color: #2DD7BB;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    transform: translateY(-120px); 
+
+  } */
+
   .submit:hover{
     border-bottom: 5px solid #CB64B2;  
     box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
@@ -165,6 +174,16 @@ h2{
     box-shadow: 0px 0px 25px 2px #AAA;
     font-family: 'Press Start 2P', cursive;  
   }
+
+  /* .entry2{
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;
+    font-family: 'Press Start 2P', cursive;  
+  } */
 
   /* Sombra que asemeja que esta flotando*/
   .shadow{
