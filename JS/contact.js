@@ -85,8 +85,19 @@ form.addEventListener('submit', function (event) {
     datos.push(message.value)
     messageError.textContent = '¡Gracias! Nos pondremos en contacto pronto con usted.'
     event.preventDefault();
-    console.log(datos)
-
+    console.log(datos);
+    
+    var contactParams = {
+      fromName: nombre.value,
+      fromEmail: email.value,
+      fromPhone: phone.value,
+      fromMessage: message.value,
+  };
+  emailjs.send('service_6bqlr4g','template_sglxwf9', contactParams, 'user_ZhjtSfzk5zFv0BZ0VZdUj').then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+      console.log('FAILED...', error);
+      });
   }
 });
 

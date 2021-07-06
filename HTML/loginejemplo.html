@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form name = "form" action = "#" method = "POST">
+      <input type = "text" name = "usuario" placeholder = "Ingresa tu usuario">
+      <input type = "password" name = "contrasena" placeholder = "Ingresa tu contrasena"> 
+      <button onclick="sesion();">Entrar</button>
+   </form>
+
+   <script> 
+   function sesion(){
+      var form = document.form; 
+      var user = form.usuario.value;
+      var pass = form.contrasena.value;
+/* 
+      localStorage.setItem(user, pass); */
+
+     /*  setTimeout(alert("4 seconds"),4000); */
+
+      if(user == "jaime" && pass == "123" || user == "miriam" && pass == "321" || user == "oswaldo" && pass == "312"|| user == "pantoja" && pass == "311"){ // ejemplo de usuario 
+         alert("Bienvenido, administrador");
+      } else {
+         alert("Bienvenido, usuario general");
+      }
+   }
+
+   
+   </script>
+</body>
+</html>
