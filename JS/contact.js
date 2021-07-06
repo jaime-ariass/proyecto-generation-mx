@@ -43,35 +43,6 @@ function showErrorName() {
 
 // --------- Validación de email.
 
-<<<<<<< HEAD
-  if(!email.validity.valid || !nombre.validity.valid || !phone.validity.valid || !message.validity.valid) {
-    // Si no es así, mostramos un mensaje de error apropiado
-    
-    messageError.textContent = 'Por favor, verifique su información.';
-    // Luego evitamos que se envíe el formulario cancelando el evento
-    event.preventDefault();
-    
-  }else{
-    datos.push(nombre.value)
-    datos.push(email.value)
-    datos.push(phone.value)
-    datos.push(message.value)
-    messageError.textContent = '¡Gracias! Nos pondremos en contacto pronto con usted.'
-    event.preventDefault();
-    console.log(datos);
-    
-    var contactParams = {
-      fromName: nombre.value,
-      fromEmail: email.value,
-      fromPhone: phone.value,
-      fromMessage: message.value,
-  };
-  emailjs.send('service_6bqlr4g','template_sglxwf9', contactParams, 'user_ZhjtSfzk5zFv0BZ0VZdUj').then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      }, function(error) {
-      console.log('FAILED...', error);
-      });
-=======
 email.addEventListener('input', function (event) {
 
 
@@ -82,7 +53,6 @@ email.addEventListener('input', function (event) {
   } else {
    
     showErrorEmail();
->>>>>>> respaldo
   }
   
 });
@@ -159,8 +129,6 @@ message.addEventListener('input', function (event) {
     
   }
 
-<<<<<<< HEAD
-=======
 // ---------Envío de datos.
 
 form.addEventListener('submit', function (event) {
@@ -202,4 +170,3 @@ form.addEventListener('submit', function (event) {
  
  
 
->>>>>>> respaldo
