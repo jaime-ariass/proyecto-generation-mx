@@ -14,7 +14,7 @@ function iniciarSesion(){
 }
 
 function ingresar(){
-   /* var rol = localStorage.getItem('rolUsuarioActivo');
+   var rol = localStorage.getItem('rolUsuarioActivo');
    switch(rol){
       case '1':
          window.location.href = "../index.html";
@@ -25,5 +25,5 @@ function ingresar(){
       default: 
          window.location.href = "../contact.html";
       break;
-   } */
+   }
 }

@@ -1,5 +1,5 @@
 function addItem(item){
-    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 30em; margin-right: 8px;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100 pt-3" alt="image">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
+    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 30em; margin-right: 8px;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100 pt-3" alt="No se cargó la imagen">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 } 
