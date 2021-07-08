@@ -40,7 +40,7 @@ addItem({'name':'Halo: The Master Chief Collection',
     'img':'https://wallpaperaccess.com/full/5440356.jpg',
     'description':'Ichiban Kasuga, un yakuza de una familia de bajo rango de Tokio, se enfrenta a una pena de cárcel de 18 años por asumir la culpa de un delito que no cometió. Sin perder la esperanza, cumple su condena. Cuando sale de la cárcel, descubre que nadie lo está esperando y que el hombre al que más respetaba ha destruido su clan.'})
 
-    addItem({'name':'cyberpunk 2077',
+    addItem({'name':'Cyberpunk 2077',
     'img':'https://cdn.wallpapersafari.com/57/40/rQDkaw.jpg',
     'description':'Es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad.'})
 
@@ -54,7 +54,7 @@ addItem({'name':'Halo: The Master Chief Collection',
 
     
 
- // Agrega el Registro que se tenia en Backup  base
+ // Agrega el Registro que se tenia en Backup base
     function addBase(){
         
         alert('Se agregaron los productos');
