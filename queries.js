@@ -24,14 +24,14 @@ connection.connect((err)=>{
 
 // insertar informacion a la tabla "usuarios"
 
-//Inser es basicamente INSERT INTO (nombre de nuestra base de datos y la tabla a modificar ) + (atributos que tiene la tabla) + -----Aqui ingresamos los valores con la ayuda de "VALUES" + (Los ingresador por el usuario)
+//Insert es basicamente INSERT INTO (nombre de nuestra base de datos y la tabla a modificar ) + (atributos que tiene la tabla) + -----Aqui ingresamos los valores con la ayuda de "VALUES" + (Los ingresador por el usuario)
 
 //Me manda a llamar una funcion nativa de MYSQL llamada query(Busqueda) que me solicita en donde lo quiero ingresar y los valores que quiero ingresar, mismos que son asignados en la variable insert
 
-/*  const insert = "INSERT INTO `proyecto`.`usuarios` (`nombre`, `apellido`, `direccion`, `telefono`, `fechaDeNacimiento`, `nacionalidad`, `correo`, `contrasena`, `rol`) VALUES ('oswaldo', 'sanchez', 'nueva york', '0987654321', '2021-07-07', 'MEX', 'osvaldo@gmail.com', 'contra', '1')"
+   /* const insert = "INSERT INTO `proyecto`.`usuarios` (`nombre`, `apellido`, `correo`, `contrasena`, `fechaDeNacimiento`, `rol`) VALUES ('pepito', 'sanchez', 'osvaldo@gmail.com', 'contra', '2021-07-07','1')"
 connection.query(insert, (err, rows) => {
   if(err) throw err
-}) */
+})   */
 
 
 /* connection.query('SELECT * from usuarios', (err,rows) =>{
@@ -45,7 +45,7 @@ console.log(`El apellido del usuario es ${usuario1.apellido}`)
 }) */
  
 // visualizar correo y contrasena de usuarios
-/* connection.query('SELECT correo, contrasena from usuarios', (err,rows) =>{
+ connection.query('SELECT correo, contrasena, rol from usuarios', (err,rows) =>{
   if(err) throw err
   console.log('Los datos de la tabla son estos:')
   console.log(rows)
@@ -54,8 +54,20 @@ console.log(`El apellido del usuario es ${usuario1.apellido}`)
   const usuario1 = rows[0]
   console.log(`El correo del usuario es ${usuario1.correo}`)
   console.log(`La contraseña del usuario es ${usuario1.contrasena}`)
+  console.log(`El rol del usuario es ${usuario1.rol}`)   
+
+
   })
- */
+  
+  // function login() {
+  //   if (user== usuario1.correo ) {
+  //     if (psw == usuario1.contrasena) {
+  //       if (usuario1.rol == 1) {
+    // console.log("Bienvenido");  
+  //       }
+  //           }
+  //   }
+  // }
 
   // insertar informacion a la tabla "videojuegos"
   /* const insertVideojuego = "INSERT INTO `proyecto`.`videojuegos` (`plataforma`, `sku`, `descripcion`) VALUES ('juego[!]', 'xbox', 'ps es un juego muy chido tmb')"
@@ -64,9 +76,22 @@ connection.query(insertVideojuego, (err, rows) => {
 }) */
 
 // insertar informacion a la tabla "compra"
-const insertCompra = "INSERT INTO `proyecto`.`compra` (`fechaInicio`, `fechaTermino`) VALUES ('2021-07-07', '2021-09-07')"
+/* const insertCompra = "INSERT INTO `proyecto`.`compra` (`fechaInicio`, `fechaTermino`) VALUES ('2021-07-07', '2021-09-07')"
 connection.query(insertCompra, (err, rows) => {
   if(err) throw err
    
+}) */
+
+/* const borrar = "DELETE FROM proyecto.usuarios WHERE correo = 'jaime@gmail.com'";
+connection.query(borrar, (err, rows) => {
+  if(err) throw err
+   
+}) */
+
+const modificar  ="UPDATE `proyecto`.`usuarios` SET `nombre` = 'pepi' WHERE `nombre` = 'pepita'";
+connection.query(modificar, (err, rows) => {
+  if(err) throw err
+   
 })
+
 connection.end()
