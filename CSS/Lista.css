@@ -1,0 +1,57 @@
+
+@media only screen and (min-width: 360px){    
+  body{
+    background-image: url("/Recursos/bg-lista.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+
+  #card{
+    background-image: url("/Recursos/bg-lista.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+
+ 
+
+  a:hover{
+      text-decoration: none;
+      border-bottom: 3px solid #39ff14;
+  }
+  
+  a{
+      animation: color-change 30s infinite;    
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Press Start 2P', cursive;
+  }
+
+  @keyframes color-change {
+      0% { color: #DF1B76; }
+      50% { color: #2DD7BB; }
+      100% { color: #DF1B76; }
+    }
+
+ 
+
+}
+@media only screen and (min-width: 1024px){
+  .navbar-brand{
+      position: absolute;
+  }
+  .navbar-nav{
+      margin-left: auto;  
+  }
+
+  .navbar-nav>li{
+      font-family: 'Press Start 2P', cursive;
+      padding-left: 15px;
+      
+  }
+
+} 
+

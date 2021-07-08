@@ -1,0 +1,360 @@
+@media only screen and (min-width: 360px){
+
+  a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #39ff14;
+  }
+  a{
+    animation: color-change 30s infinite;    
+    font-weight: bold;
+    font-size: large;
+  }
+  span{
+    display: block;
+  }
+  
+  .navbar-nav>li{
+    font-size: 70%;
+  }
+
+  .contactBody{
+    background-image: url(/Recursos/FormularioFondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:300px;
+    font-family: 'Press Start 2P', cursive;
+    
+
+
+}
+  .title{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: rgb(252, 252, 252);
+  }
+  
+  #title-Tag-Line{
+      font-size: 20px;
+  }
+/* Posicion del formulario */
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto 0 auto; 
+  }
+
+/* form animation starts */
+  .form {
+    background: #908c8c;
+    text-align: center; 
+    box-shadow: 0px 0px 20px 5px #AAA; 
+    border-radius: 10px;  
+    width: 400px; 
+    height: 500px;
+    margin: 30px auto 0 auto;
+    padding: 5px 5px;  
+    animation: bounce 1.5s infinite;
+    opacity: 0.9;
+  }
+
+  .form:hover{
+    animation-play-state: paused;
+  }
+
+  .name { 
+    background-color: #DF1B76;
+    border-bottom: 5px solid #B2175F;
+    color: white;
+    height: 40px;
+    width:300px;
+  }
+
+  ::-webkit-input-placeholder{
+      color: white;
+      font-size: 20px;
+  }
+  .name:hover{
+    opacity: 0.9;
+    background-color: #DF1B76;
+    border-bottom: 5px solid #B2175F;
+    height:40px;
+    width:380px;
+    opacity: 0.9;
+  }
+
+  .submit{
+    border-radius:5px;
+    padding:10px;
+    background-color: #2DD7BB;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    transform: translateY(-120px); 
+
+  }
+
+  .submit:hover{
+    border-bottom: 5px solid #CB64B2;  
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  }
+
+  .entry{
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;
+    font-family: 'Press Start 2P', cursive;  
+  }
+
+  /* Sombra que asemeja que esta flotando*/
+  .shadow{
+    box-shadow: 0px 0px 60px 5px #AAA;
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 50%; 
+    margin: 50px auto 0 auto;
+    padding: 0 20px;  
+    animation: shadow 1.5s infinite;
+  }
+  .submit{
+    border-radius:5px;
+    padding:10px;
+    width:150px;
+    color: white;
+    background-color: #EE78D1;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    margin-top: 150px; 
+
+  }
+
+
+
+  @keyframes bounce{
+    0%{
+      
+    }
+    50%{
+      transform: translate(0, 8px);
+    }
+
+  }
+  @keyframes shadow{
+    0%{
+      
+    }
+    50%{
+      opacity: 0.8;
+      width: 50%;
+    }
+  }
+
+  @keyframes color-change {
+    0% { color: #DF1B76; }
+    50% { color: #2DD7BB; }
+    100% { color: #DF1B76; }
+  }
+
+   /* Este es nuestro diseño para los campos no válidos */
+   input:invalid{
+    border-color: #900;
+    
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* Este es el diseño para nuestros mensajes de error */
+  .error {
+    width : 100%;
+    padding: 0px;
+    
+    font-size: 90%;
+    color: #d600ff;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+  
+    padding: 0.3em;
+  }
+}
+
+
+ /* Tamaño de la pantalla del dispositivo hasta 1024 px */
+
+@media only screen and (min-width: 1024px){
+  
+  .navbar-brand{
+    position: absolute;
+  }
+  .navbar-nav{
+    margin-left: auto;  
+  }
+
+  .navbar-nav>li{
+    padding-left: 15px;
+  }
+  
+
+  .contactBody{
+    background-image: url("/Recursos/FormularioFondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:300px;
+    
+
+
+}
+.title{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: rgb(252, 252, 252);
+    
+  }
+
+  #title-Tag-Line{
+      font-size: 20px;
+      
+  }
+/* This will center the form */
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto 0 auto; 
+    
+  }
+
+/* form animation starts */
+  .form {
+    background: #908c8c;
+    text-align: center; 
+    box-shadow: 0px 0px 20px 5px #AAA; 
+    border-radius: 10px;  
+    width: 500px; 
+    height: 600px;
+    margin: 30px auto 0 auto;
+    padding: 5px 5px;  
+    animation: bounce 1.5s infinite;
+    
+  }
+
+.name { 
+    background-color: #4a4c4e;
+    border-bottom: 5px solid #B2175F;
+    color: white;
+    height:50px;
+    width:400px;
+  }
+
+  ::-webkit-input-placeholder{
+      color: white;
+      font-size: 20px;
+  }
+  .name:hover{
+    opacity: 0.9;
+    background-color: #cc0c29;
+    border-bottom: 5px solid #B2175F;
+    height:50px;
+    width:450px;
+  }
+  .message {   
+    background-color: #4a4c4e;
+    border-bottom: 5px solid rgb(195, 35, 17);
+    overflow: hidden;
+    height: 150px;  
+    width:400px;
+  }
+
+  .message:hover{
+    opacity: 0.9;
+    background-color: #5d67f1;
+    border-bottom: 5px solid #5d67f1;
+    height: 150px;
+    width:450px;
+  }
+
+  .submit{
+    border-radius:5px;
+    padding:10px;
+    background-color: #2DD7BB;  
+    border: none;
+    border-bottom: 5px solid #CB64B2; 
+    transform: translateY(-120px); 
+
+  }
+
+  .submit:hover{
+    border-bottom: 5px solid #2c20db;  
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  }
+
+  .entry{
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA; 
+    font-family: 'Press Start 2P', cursive; 
+  }
+
+  /* Shadow to make it look like form is floating  */
+  .shadow{
+    box-shadow: 0px 0px 60px 5px #AAA;
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 50%; 
+    margin: 50px auto 0 auto;
+    padding: 0 20px;  
+    animation: shadow 1.5s infinite;
+  }
+.submit{
+    border-radius:5px;
+    padding:10px;
+    width:150px;
+    color: white;
+    background-color: #1f8805;  
+    border: none;
+    border-bottom: 5px solid #60e43f; 
+    margin-top: 150px; 
+
+  }
+
+
+
+  @keyframes bounce{
+    0%{
+      
+    }
+    50%{
+      transform: translate(0, 8px);
+    }
+
+  }
+  @keyframes shadow{
+    0%{
+      
+    }
+    50%{
+      opacity: 0.8;
+      width: 50%;
+    }
+  }
+  .error{
+    font-size: 100%;
+  }
+}

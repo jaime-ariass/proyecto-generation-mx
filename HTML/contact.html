@@ -13,9 +13,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
+
 <body class="contactBody">
 
-
+<!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand ms-2" href="#">
@@ -26,35 +27,37 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SUSCRIPCION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">EQUIPO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        
+        
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/Lista.html">SUSCRIPCION</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/equipo.html">EQUIPO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/contact.html">CONTACTO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/formulario.html">DB</a>
+                      </li>
+                      
                     </ul>
-                    
+                      <li class="nav-item">
+                          <a class="nav-link" href="/HTML/login.html">LOGIN</a>
+                      </li>
+                      
                 </div>
             </div>
         </nav>
 
 
      
-
 
 
         <div class="wrapper">
@@ -66,27 +69,30 @@
     
                 <form novalidate id=formsection class="form">
            
-                    <input type = "text" id = 'nombre' name="nombre" required minlength="8" class="name entry" placeholder="Name">
+                    <input type = "text" id = 'nombre' name="nombre" pattern="[A-Za-z]+" required minlength="3" class="name entry" placeholder="Nombre">
                     
             
                     <input type = "email" id = 'email' name="email" required minlength="8" class="email entry" placeholder="Email">
                     
                     
-                    <input type = "tel" id = 'telefono' name="telefono" pattern="[0-9]{3}" required minlength="10" class="email entry" placeholder="Phone">
+                    <input type = "tel" id = 'telefono' pattern="[0-9]{10}" name="telefono" required minlength="10" class="email entry" placeholder="Teléfono">
                     
 
-                    <textarea type = "text" id = 'mensaje' name="message" class="message entry" placeholder="Message"></textarea>
+                    <textarea type = "text" id = 'mensaje' name="message" required minlength="5" class="message entry" placeholder="Mensaje"></textarea>
                     <span class="error" aria-live="polite"></span>
                 
-                    <button class = "submit entry">Submit</button>
+                    <button class = "submit entry">Enviar</button>
                 </form>
                 <div class="shadow"></div>     
 
         </div>
 
+
+
+
 <script src="/JS/contact.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
 </body>
 </html>
-  
