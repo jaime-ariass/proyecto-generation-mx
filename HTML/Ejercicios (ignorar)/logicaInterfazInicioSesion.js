@@ -4,8 +4,8 @@ function iniciarSesion(){
    var sCorreo = '';
    var sContrasena = '';
 
-   sCorreo = document.querySelector('#txtCorreo').value;
-   sContrasena = document.querySelector('#txtContrasena').value;
+   sCorreo = email.value;
+   sContrasena = psw.value;
 
    bAcceso = validarCredenciales(sCorreo, sContrasena);
    if(bAcceso == true) {

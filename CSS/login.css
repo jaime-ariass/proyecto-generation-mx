@@ -1,145 +1,124 @@
-@media only screen and (min-width: 360px){    
-
+/********** Vista en dispositivo móvil **********/
+@media only screen and (min-width: 360px){
+  #imagen>img{
+    margin: 0;
+    padding-top: 50px;
+  }
+  /* Formato de navbar */
   a:hover{
-      text-decoration: none;
-      border-bottom: 3px solid #39ff14;
+    text-decoration: none;
+    border-bottom: 3px solid #39ff14;
   }
   a{
-      animation: color-change 30s infinite;    
-      font-weight: bold;
-      font-size: 100%;
-      font-family: 'Press Start 2P', cursive;
+    animation: color-change 30s infinite;    
+    font-weight: bold;
+    font-size: large;
   }
-
-  @keyframes color-change {
-      0% { color: #DF1B76; }
-      50% { color: #2DD7BB; }
-      100% { color: #DF1B76; }
-    }
-
-  #iconsElements{
-        
-      flex-direction: column;
-      align-items: center;
-
-    }
-  
-  #iconsElements img{
-      margin-bottom: 50px;
-      
+  span{
+    display: block;
   }
-
-}
-@media only screen and (min-width: 1024px){
-  .navbar-brand{
-      position: absolute;
-  }
-  .navbar-nav{
-      margin-left: auto;  
-  }
-
   .navbar-nav>li{
-      font-family: 'Press Start 2P', cursive;
-      padding-left: 15px;
-      
+    font-size: 70%;
   }
 
-  #iconsElements{
-        
-      flex-direction: row;       
-
+  /* Cambio de colores automaticos */
+  @keyframes color-change {
+    0% { color: #DF1B76; }
+    50% { color: #2DD7BB; }
+    100% { color: #DF1B76; }
   }
 
-  #iconsElements img{
-      margin-left: 50px;
-      margin-right: 80px;
-      
+  /* Formato body webpage */
+  .contactBody{
+    background-image: url("/Recursos/FormularioFondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:300px;
+    font-family: 'Press Start 2P', cursive;
   }
-}
-
-
-
-
-/* #imagen{
-  background-image: url(/Recursos/panto.png);
-  background-repeat: no-repeat;
-  background-size: 100% 900%;
-} */
-
-
-.contenedor{
+  .title{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: rgb(252, 252, 252);
+  }
   
-  opacity: 0.9;
-}
-.contenedor .sesion{
-  
-    opacity: 0.9;
-}
+  #title-Tag-Line{
+    font-size: 20px;
+  }
 
-h2{
-  position: absolute;
-  top: 25%;
-  left: 19%;
-}
+/* Posicion del formulario */
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto 0 auto; 
+  }
 
+  #positionElements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
 
-
-/* form animation starts */
+/* Animación de formulario */
   .form {
-    background: #AAA;
+    background: #908c8c;
     text-align: center; 
-    box-shadow: 0px 0px 80px 5px #AAA; 
+    box-shadow: 0px 0px 20px 5px #AAA; 
     border-radius: 10px;  
     width: 400px; 
-    height: 500px;
     margin: 30px auto 0 auto;
     padding: 5px 5px;  
     animation: bounce 1.5s infinite;
     opacity: 0.9;
   }
-
   .form:hover{
     animation-play-state: paused;
   }
-
   .name { 
     background-color: #4a4c4e;
-    border-bottom: 5px solid rgb(195, 35, 17);
+    border-bottom: 5px solid #B2175F;
     color: white;
     height: 40px;
     width:300px;
   }
-
   ::-webkit-input-placeholder{
-      color: black;
-      font-size: 20px;
+    color: white;
+    font-size: 20px;
   }
   .name:hover{
-    opacity: 0.9;
-    background-color: #fb6e63; 
-    border-bottom: 5px solid #1acaec;
+    background-color: #5d67f1;
+    border-bottom: 5px solid #B2175F;
     height:40px;
     width:380px;
-    opacity: 0.9;
   }
-  
+  .email {
+    background-color: #4a4c4e;  
+    border-bottom: 5px solid #502789;
+    height:50px;
+    width:300px;
+  }
+  .email:hover{
+    background-color: #cc0c29;  
+    border-bottom: 5px solid #502789;
+    height:50px;
+    width:380px;
+  }
   .message {   
-    background-color: #4a4c4e;
+    background-color: #4a4c4e;;
     border-bottom: 5px solid rgb(195, 35, 17);
     overflow: hidden;
     height: 100px;  
     width:300px;
   }
-
   .message:hover{
-    opacity: 0.9;
-    background-color: #1acaec;
-    border-bottom: 5px solid #fb6e63;
+    background-color: #5d67f1;
+    border-bottom: 5px solid #B2175F;
     height: 100px;
     width:370px;
-
   }
-
   .submit{
     border-radius:5px;
     padding:10px;
@@ -147,17 +126,7 @@ h2{
     border: none;
     border-bottom: 5px solid #CB64B2; 
     transform: translateY(-120px); 
-
   }
-
-  /* .submit2{
-    border-radius:5px;
-    background-color: #2DD7BB;  
-    border: none;
-    border-bottom: 5px solid #CB64B2; 
-    transform: translateY(-120px); 
-
-  } */
 
   .submit:hover{
     border-bottom: 5px solid #CB64B2;  
@@ -175,16 +144,6 @@ h2{
     font-family: 'Press Start 2P', cursive;  
   }
 
-  /* .entry2{
-    display: block;
-    margin: 30px auto;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease 0s;
-    box-shadow: 0px 0px 25px 2px #AAA;
-    font-family: 'Press Start 2P', cursive;  
-  } */
-
   /* Sombra que asemeja que esta flotando*/
   .shadow{
     box-shadow: 0px 0px 60px 5px #AAA;
@@ -200,9 +159,112 @@ h2{
     padding:10px;
     width:150px;
     color: white;
-    background-color: #EE78D1;  
+    background-color: #1f8805;  
     border: none;
-    border-bottom: 5px solid #CB64B2; 
+    border-bottom: 5px solid #60e43f;  
     margin-top: 150px; 
+  }
+
+  
+  @keyframes bounce{
+    0%{
+      
+    }
+    50%{
+      transform: translate(0, 8px);
+    }
 
   }
+  @keyframes shadow{
+    0%{
+      
+    }
+    50%{
+      opacity: 0.8;
+      width: 50%;
+    }
+  }
+
+
+   /* Este es nuestro diseño para los campos no válidos */
+  input:invalid{
+    border-color: #900; 
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* Este es el diseño para nuestros mensajes de error */
+  .error {
+    width : 100%;
+    padding: 0px;
+    font-size: 90%;
+    color: #d600ff;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+}
+
+
+
+/************* Vista en desktop ************/
+@media only screen and (min-width: 1024px){
+  
+  /* Posición de navbar */
+  .navbar-brand{
+    position: absolute;
+  }
+  .navbar-nav{
+    margin-left: auto;  
+  }
+  .navbar-nav>li{
+    padding-left: 15px;
+  }
+  
+  /* Formato de formulario*/
+  .form {
+    width: 500px; 
+  }
+  #positionElements{
+    
+    flex-direction: row;
+  }    
+  .name { 
+    background-color: #4a4c4e;
+    height:50px;
+    width:400px;
+  }
+  .name:hover{
+    height:50px;
+    width:450px;
+  }
+  .email {
+    height:60px;
+    width:400px;
+  }
+  .email:hover{
+    height:60px;
+    width:450px;
+  }
+  .message {   
+    height: 150px;  
+    width:400px;
+  }
+  .message:hover{
+    height: 150px;
+    width:450px;
+  }
+
+
+  /* Formato mensajes de error*/
+  .error{
+    font-size: 100%;
+  }
+}
