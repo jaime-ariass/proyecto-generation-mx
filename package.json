@@ -1,5 +1,25 @@
 {
   "dependencies": {
-    "emailjs-com": "^3.1.0"
-  }
+    "emailjs-com": "^3.1.0",
+    "mysql": "^2.18.1"
+  },
+  "name": "proyecto-generation-mx",
+  "version": "1.0.0",
+  "main": "Prueba.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimememes/proyecto-generation-mx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaimememes/proyecto-generation-mx/issues"
+  },
+  "homepage": "https://github.com/jaimememes/proyecto-generation-mx#readme",
+  "description": ""
 }
