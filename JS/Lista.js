@@ -1,5 +1,5 @@
 function addItem(item){
-    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 30em; margin-right: 8px;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100 pt-3" alt="image">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
+    const itemHTML = '<div class="card text-white bg-dark mb-3" style="width: 30em; margin-right: 8px;">\n' +'<img src="'+item.img +'" class="card-img-top img-fluid h-100 pt-3" alt="No se cargó la imagen">\n' + '<div class="card-body">\n' +'<h5 class="card-title">'+item.name+'</h5>\n' + '<p class="card-text">'+item.description+'</p>\n' +'        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-primary btn-lg active"> Solicitar </a></div>\n' + '</div>\n' +'</div>\n' +'<br/>';
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 } 
@@ -40,7 +40,7 @@ addItem({'name':'Halo: The Master Chief Collection',
     'img':'https://wallpaperaccess.com/full/5440356.jpg',
     'description':'Ichiban Kasuga, un yakuza de una familia de bajo rango de Tokio, se enfrenta a una pena de cárcel de 18 años por asumir la culpa de un delito que no cometió. Sin perder la esperanza, cumple su condena. Cuando sale de la cárcel, descubre que nadie lo está esperando y que el hombre al que más respetaba ha destruido su clan.'})
 
-    addItem({'name':'cyberpunk 2077',
+    addItem({'name':'Cyberpunk 2077',
     'img':'https://cdn.wallpapersafari.com/57/40/rQDkaw.jpg',
     'description':'Es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad.'})
 
@@ -54,7 +54,7 @@ addItem({'name':'Halo: The Master Chief Collection',
 
     
 
- // Agrega el Registro que se tenia en Backup  base
+ // Agrega el Registro que se tenia en Backup base
     function addBase(){
         
         alert('Se agregaron los productos');
