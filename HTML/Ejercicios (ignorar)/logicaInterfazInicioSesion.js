@@ -1,20 +1,21 @@
-document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
+
+login.addEventListener('click', iniciarSesion)
 
 function iniciarSesion(){
    var sCorreo = '';
    var sContrasena = '';
 
-   sCorreo = email.value;
-   sContrasena = psw.value;
-
-   bAcceso = validarCredenciales(sCorreo, sContrasena);
+   sCorreo = document.getElementById('user')
+   sContrasena = document.getElementById('psw1')
+   console.log(sCorreo.value)
+   bAcceso = validarCredenciales(sCorreo.value, sContrasena.value);
    if(bAcceso == true) {
       ingresar();
    }
 }
 
 function ingresar(){
-   /* var rol = localStorage.getItem('rolUsuarioActivo');
+   var rol = localStorage.getItem('rolUsuarioActivo');
    switch(rol){
       case '1':
          window.location.href = "../index.html";
@@ -25,5 +26,5 @@ function ingresar(){
       default: 
          window.location.href = "../contact.html";
       break;
-   } */
+   } 
 }

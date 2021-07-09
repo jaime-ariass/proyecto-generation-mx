@@ -10,6 +10,7 @@ function show(shown, hidden) {
 const form1  = document.getElementById('formsection1')[0];
 
 const user = document.getElementById('user')
+console.log(user.value)
 const psw = document.getElementById('psw1')
 const login = document.getElementById('login')
 
@@ -68,23 +69,58 @@ psw.addEventListener('input', function (event) {
 // ---------Envío de datos.
 
 login.addEventListener('click', function (event) {
- 
 
-  if(!user.validity.valid || !psw.validity.valid) {
+       
+       bAcceso = validarCredenciales(user.value, psw.value);
+       if(bAcceso == true) {
+          ingresar();
+       }
+
+       function obtenerListaUsuarios() { 
+        var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuariosLs')); //esto de donde viene?
+     
+        if(listaUsuarios == null){
+           listaUsuarios = 
+           [
+              //id, nombre, apellido, correo, contrasena, fecha nac, rol
+              ['1', 'Pabs', 'Monestel', 'osvaldo@gmail.com', 'osvi', '1987-10-23', '1'], 
+              ['2', 'Olman', 'Santamaria', 'olman@gmail.com', 'lolman9', '1993-04-17', '2']
+           ]
+        }
+        return listaUsuarios;
+     }
+     
+     function validarCredenciales(pCorreo, pContrasena){
+        var listaUsuarios = obtenerListaUsuarios();
+        var bAcceso = false;
+     
+        for(var i = 0; i < listaUsuarios.length; i++) {
+           if(pCorreo == listaUsuarios[i][3] && pContrasena == listaUsuarios[i][4]) {
+              bAcceso = true;
+              localStorage.setItem('usuarioActivo', listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+              localStorage.setItem('rolUsuarioActivo', listaUsuarios[i][6]);
+           }
+        }
+        return bAcceso;
+     }
+    
+     function ingresar(){
+      var rol = localStorage.getItem('rolUsuarioActivo');
+      switch(rol){
+         case '1':
+            window.location.href = "/HTML/index.html";
+            break;
+         case '2':
+            window.location.href =  "http://www.google.com";
+            break;
+         default: 
+            window.location.href = "/HTML/contact.html";
+         break;
+      } 
+    }
+    
+    event.preventDefault();
   
-    
-    msgError.textContent = 'Por favor, verifique su información.';
- 
-    event.preventDefault();
-    
-  }else{
- 
-    msgError.textContent = 'Login exitoso.'
-    
-    event.preventDefault();
-   
-    
-}
 });
 
 
