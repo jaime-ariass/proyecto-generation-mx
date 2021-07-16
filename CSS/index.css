@@ -31,6 +31,9 @@
         
     }
 
+    .navbar-toggler{
+        background-color: transparent !important;
+    }
     
 
 }
@@ -88,5 +91,7 @@
         border-radius: 10px;
         
     }
-    
+    .header .navbar {
+        background-color: transparent !important;
+      }
 }
