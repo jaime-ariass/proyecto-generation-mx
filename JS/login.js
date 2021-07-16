@@ -10,7 +10,6 @@ function show(shown, hidden) {
 const form1  = document.getElementById('formsection1')[0];
 
 const user = document.getElementById('user')
-console.log(user.value)
 const psw = document.getElementById('psw1')
 const login = document.getElementById('login')
 
@@ -271,17 +270,3 @@ if(!email.validity.valid || !nombre.validity.valid || !phone.validity.valid ||!p
   
 }
 });
-
-function login(){
- 
-}
-
-
-
-
-
-
-
-
-
-
