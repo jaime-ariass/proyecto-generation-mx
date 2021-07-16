@@ -35,6 +35,34 @@
         background-color: transparent !important;
     }
     
+    #cardstyle{
+        background-color:  #088404;
+        
+    }
+    h2{
+        font-size: 100%;
+       
+        color: white;
+    }
+
+    #suscripcion{
+        margin-top: 100px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contacto {
+        margin: auto;
+        padding: 14px;
+        background-color: #2DD7BB;
+        text-align: right;    
+        font-size: 60%;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+  
 
 }
 @media only screen and (min-width: 1024px){
@@ -55,11 +83,13 @@
 
     #iconsElements{
           
-        flex-direction: row;       
+        flex-direction: row;
+            
 
     }
 
     #iconsElements img{
+       
         margin-left: 50px;
         margin-right: 50px;
         
@@ -91,7 +121,43 @@
         border-radius: 10px;
         
     }
-    .header .navbar {
-        background-color: transparent !important;
+    .navbar {
+        background-color: black;
       }
+    #suscripcion{
+        margin-top: 100px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .simg{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .simg>img{
+        margin: 100px 200px;
+        cursor: pointer;
+    }
+
+    h2{
+        font-size: 100%;
+       
+        color: white;
+    }
+  
+    #carouselExampleIndicators{
+        z-index: -1; 
+        width:100%;
+        top:0;
+       
+    }
+
+    #cardstyle{
+        background-color:  #088404;
+        margin-right: 50px;
+    }
+
 }

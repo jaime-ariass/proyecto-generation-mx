@@ -15,20 +15,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link href="/font/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
   <title>Pagina Principal</title>
 </head>
 
 <body class="principal">
    <!--Nav bar, logo - items-->
   
-   
-  
-  <!--Carrusel, header - imágenes-->
-  <header class="header">
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
           <a class="navbar-brand ms-2" href="#">
               <img src="\Recursos\HOME\logoCH.png" alt="" width="40" height="40">
@@ -68,6 +65,12 @@
         </div>
     
     </nav>
+   
+  
+  <!--Carrusel, header - imágenes-->
+  <header class="header">
+    
+   
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -122,8 +125,63 @@
 
     </div>
 
-    <div id="suscripcion" style="height: 500px;">
+    <div id="suscripcion">
       <h2>SUSCRIPCIÓN</h2>
+      <div class="simg" >
+        <div class="card-group">
+          <div id="cardstyle" class="card mb-3 border-success" style="max-width: 700px; height: 250px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/Recursos/HOME/logoG.png"  class="img-fluid rounded-start" alt="..." >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Exile Pass</h4>
+                  <p class="card-text">Por solo $100 MXN al mes, disfruta de una selección mensual de los mejores videojuegos rankeados por uno de nuestros expertos.</p>
+                  <p class="card-text"><small class="text-info">Métodos de pago</small></p>
+                  <div class="pay-btns">
+                    <a class="btn stripe" href="#"><i class="fab fa-stripe fa-2x"></i></a>
+                    <a class="btn bitcoin" href="#"><i class='fab fa-bitcoin fa-2x'></i></a>
+                    <a class="btn amazon" href="#"><i class="fab fa-amazon-pay fa-2x"></i></a>
+                    <a class="btn visa" href="#"><i class="fab fa-cc-visa fa-2x"></i></a>
+                    <a class="btn paypal" href="#"><i class="fab fa-paypal fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 bg-dark" style="max-width: 700px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <a href="/HTML/Lista.html">
+                  <img src="/Recursos/HOME/logoG.png"  class="img-fluid rounded-start" alt="...">
+                </a>
+                
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-success">
+                  <h4 class="card-title">Exile Gold</h4>
+                  <p class="card-text">Además de la selección mensual, disfruta de más videojuegos que hemos agregado especialmente para tí, ofertas y preventas, todo esto por $200 MXN mensuales.</p>
+                  <p class="card-text"><small class="text-info">Métodos de pago</small></p>
+                  <div class="pay-btns">
+                    <a class="btn stripe" href="#"><i class="fab fa-stripe fa-2x"></i></a>
+                    <a class="btn bitcoin" href="#"><i class='fab fa-bitcoin fa-2x'></i></a>
+                    <a class="btn amazon" href="#"><i class="fab fa-amazon-pay fa-2x"></i></a>
+                    <a class="btn visa" href="#"><i class="fab fa-cc-visa fa-2x"></i></a>
+                    <a class="btn paypal" href="#"><i class="fab fa-paypal fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contacto">
+      <h2 style="font-size: 220%;"><a style="animation-play-state: paused;" href="/HTML/contact.html">¿Necesitas ayuda?</a></h2>
+      <p> Puedes contactarnos si te interesa que agreguemos algún videojuego que no este disponible (aún) en la plataforma o si tienes alguna duda, sugerencia o inquietud.</p>
+      <p>exiliadosgames@gmail.com</p>
     </div>
 
   </main>  
