@@ -31,8 +31,15 @@
         
     }
 
+    .navbar-toggler{
+        background-color: transparent !important;
+    }
+    
+
 }
 @media only screen and (min-width: 1024px){
+   
+
     .navbar-brand{
         position: absolute;
     }
@@ -54,7 +61,37 @@
 
     #iconsElements img{
         margin-left: 50px;
-        margin-right: 80px;
+        margin-right: 50px;
         
     }
+
+    .carousel-inner{
+        max-height: 600px !important;
+    }
+    .loginbutton{
+        display: flex;
+        justify-content:flex-end;
+    }
+    .button {
+        position: absolute;
+        top: 0%;
+        background-color: black; 
+        border: 2px solid #4CAF50; 
+        color: #4CAF50;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        border-radius: 10px;
+        
+    }
+    .header .navbar {
+        background-color: transparent !important;
+      }
 }
