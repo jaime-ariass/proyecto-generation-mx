@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "emailjs-com": "^3.1.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "vanilla-tilt": "^1.7.0"
   },
   "name": "proyecto-generation-mx",
   "version": "1.0.0",
   "main": "Prueba.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
