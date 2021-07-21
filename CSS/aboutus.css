@@ -82,4 +82,30 @@
       margin-right: 80px;
       
   }
+  .loginbutton{
+    display: flex;
+    justify-content:flex-end;
+  }
+  .button {
+    position: absolute;
+    top: 0%;
+    background-color: black; 
+    border: 2px solid #4CAF50; 
+    color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    border-radius: 10px;
+    
+  }
+  .header .navbar {
+    background-color: transparent !important;
+  }
 }
