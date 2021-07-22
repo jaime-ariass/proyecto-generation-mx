@@ -70,17 +70,18 @@ function showErrorPsw() {
 login.addEventListener('click', function (event) {
 
 
-if(!user.validity.valid || !psw.validity.valid) {
+if(!user.validity.valid || !psw.validity.valid || (pswData.indexOf(psw.value) <= 0) || (emailData.indexOf(user.value) <= 0)) {
 
   
-  msgError.textContent = 'Por favor, verifique su información.';
+  msgError.textContent = 'Usuario no registrado';
 
   event.preventDefault();
   
 }else{
 
-  msgError.textContent = 'Login exitoso.'
-  
+  msgError.textContent = 'Login exitoso. Bienvenido ' + nameData[emailData.indexOf(user.value)] + ' :D'
+  window.location.href = "../HTML/index.html"
+  //alert("Bienvenido" + nameData[emailData.indexOf(user.value)])
   event.preventDefault();
  
   
@@ -265,13 +266,84 @@ if(!email.validity.valid || !nombre.validity.valid || !phone.validity.valid ||!p
   passwordEnc = btoa(password.value);
   console.log(passwordEnc);
   
-  event.preventDefault();
+  //event.preventDefault();
  
   
 }
 });
 
+var pswData = []
+var emailData = []
+var nameData = []
 
+//AJAX
+
+$(document).ready(() => {
+  const list = () => {
+    $.ajax({
+      url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/users',
+      type: 'GET',
+      dataType: 'json',
+      success: function(res){
+        let data = '';
+        res.forEach(element => {
+          data+=`
+            <tr>
+              <td>${element.id}</td>
+              <td>${element.name}</td>
+              <td>${element.email}</td>
+            </tr>
+          `
+        });
+
+        for (var i in res) {
+          pswData.push(res[i].password)
+          
+        }
+        for (var i in res) {
+          emailData.push(res[i].email)
+          
+        }
+
+        for (var i in res) {
+          nameData.push(res[i].name)
+          
+        }
+
+        console.log(pswData)
+        console.log(emailData)
+        $('#tbody').html(data);
+        
+        
+      }
+      
+    })
+  }
+
+  const save = () => {
+    $('#register').on('click', function(){
+      const datosUser = {
+        name: $('#nombre').val(),
+        email: $('#email').val(),
+        phone: $('#telefono').val(),
+        password: $('#psw').val(),
+      }
+      $.ajax({
+        url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/users',
+        contentType: 'application/json',
+        type: 'POST',
+        data: JSON.stringify(datosUser),
+        dataType: 'json',
+        success: (data) => {
+          console.log('Registro exitoso')
+        }
+      })
+    })
+  }
+
+list();
+save();
+})
 
 
 
