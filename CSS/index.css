@@ -1,3 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 16px;
+    background: #333333;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 23%;
+    height: 480px;
+    padding: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #ff677d 10%, #cd6684 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.suscription .container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscription {
+    height: auto;
+    max-width: 100%;
+    transform: translateZ(50px);
+    max-height: 145px;
+    width: 240px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.category {
+    transform: translateZ(30px);
+    font-weight: bolder;
+    font-size: 24px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    align-self: start;
+}
+
+.category .sub-head {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 2px;
+}
+
+.description {
+    transform: translateZ(25px);
+    text-align: justify;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+body a {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+.read-more {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.35);
+    transform: rotateZ(30px);
+    font-size: 16px;
+    font-weight: medium;
+}
+
+.read-more:hover {
+    cursor: pointer;
+}
+
+body .js-tilt-glare {
+    pointer-events: none;
+}
+
 @media only screen and (min-width: 360px) {
     .principal {
         background-color: black;
@@ -52,7 +160,7 @@
         padding: 14px;
         background-color: #2DD7BB;
         text-align: right;
-        font-size: 60%;
+        font-size: 13px;
         font-family: 'Press Start 2P', cursive;
     }
 }

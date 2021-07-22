@@ -113,8 +113,8 @@ body {
 }
 
 .contenedor.imagen img {
-    max-width: 200px;
-    max-height: 50px;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0.1;
     transition: 0.5s;
 }
@@ -148,7 +148,7 @@ body {
 
 .contenedor:before,
 .contenedor:after {
-    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+    background: linear-gradient(235deg, #fafafa, #010615, #0bd6f1);
 }
 
 .contenedor:nth-child(2):before,
@@ -158,7 +158,7 @@ body {
 
 .contenedor:nth-child(3):before,
 .contenedor:nth-child(3):after {
-    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+    background: linear-gradient(235deg, #A9A9A9, #010615, #660000);
 }
 
 .contenedor:nth-child(4):before,
