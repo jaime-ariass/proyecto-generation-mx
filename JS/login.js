@@ -70,7 +70,7 @@ function showErrorPsw() {
 login.addEventListener('click', function (event) {
 
 
-if(!user.validity.valid || !psw.validity.valid || (pswData.indexOf(psw.value) <= 0) || (emailData.indexOf(user.value) <= 0)) {
+if(!user.validity.valid || !psw.validity.valid || (pswData.indexOf(psw.value) < 0) || (emailData.indexOf(user.value) < 0)) {
 
   
   msgError.textContent = 'Usuario no registrado';
@@ -281,7 +281,7 @@ var nameData = []
 $(document).ready(() => {
   const list = () => {
     $.ajax({
-      url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/users',
+      url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/login',
       type: 'GET',
       dataType: 'json',
       success: function(res){
@@ -329,7 +329,7 @@ $(document).ready(() => {
         password: $('#psw').val(),
       }
       $.ajax({
-        url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/users',
+        url: 'https://60f99aa47ae59c0017165e6a.mockapi.io/exilegames/login',
         contentType: 'application/json',
         type: 'POST',
         data: JSON.stringify(datosUser),
