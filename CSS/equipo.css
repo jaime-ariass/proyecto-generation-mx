@@ -72,7 +72,7 @@ body{
     background: #010615;
     background-color: black;
 }
-
+/* aliniacion  de las cajas */
 #info{
     display: flex;
     justify-content: center;
@@ -93,8 +93,12 @@ body{
     background: #060c21;
     transition: 0.5;
 }
-.box:hover{
-    height: 400px;
+.contenedor:hover{
+    height: 600px;
+    align-items: flex-start;
+    padding-top: 48px;
+    background: border-box;
+
 }
 .contenedor.imagen{
     position: absolute;
@@ -140,18 +144,26 @@ body{
 }
 .contenedor:before, 
 .contenedor:after{
-    background: linear-gradient(235deg, #89ff00,#010615,#00bcd4);
+    background: linear-gradient(235deg, #fafafa,#010615,#0bd6f1);
 }
 
 .contenedor:nth-child(2):before,
 .contenedor:nth-child(2):after{
-    background: linear-gradient(235deg, #ff005e,#010615,#fbff00);
+    background: linear-gradient(235deg, #29abb4,#010615,#fbff00);
 } 
 
 .contenedor:nth-child(3):before,
 .contenedor:nth-child(3):after{
-    background: linear-gradient(235deg, #772aff,#010615,#2196F3);
+    background: linear-gradient(235deg, #A9A9A9,#010615,#660000);
+
+    
 }   
+.contenedor:nth-child(4):before,
+.contenedor:nth-child(4):after{
+    background: linear-gradient(235deg, #c49412,#010615,#f32167);
+
+    
+} 
 
 .contenedor .contenido{
     position: absolute;
@@ -170,6 +182,7 @@ body{
 
 .contenedor:hover .contenido{
     opacity: 1;
+    height: 300px;
 }
 
 .contenedor .contenido h2{
@@ -185,4 +198,8 @@ body{
     color: #fff;
     font-weight: 200;
     letter-spacing: 2px;
+}
+
+.social-btns{
+    align-items: center;
 }

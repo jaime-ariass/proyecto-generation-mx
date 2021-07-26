@@ -1,60 +1,261 @@
-@media only screen and (min-width: 360px){    
-    .principal{
-        background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 16px;
+    background: black;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 23%;
+    height: 480px;
+    padding: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #ff677d 10%, #cd6684 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.suscription .container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscription {
+    height: auto;
+    max-width: 100%;
+    transform: translateZ(50px);
+    max-height: 145px;
+    width: 240px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.category {
+    transform: translateZ(30px);
+    font-weight: bolder;
+    font-size: 24px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    align-self: start;
+}
+
+.category .sub-head {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 2px;
+}
+
+.description {
+    transform: translateZ(25px);
+    text-align: justify;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+body a {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+.read-more {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.35);
+    transform: rotateZ(30px);
+    font-size: 16px;
+    font-weight: medium;
+}
+
+.read-more:hover {
+    cursor: pointer;
+}
+
+body .js-tilt-glare {
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 360px) {
+    .principal {
+        background-image: url("/Recursos/bg-lista.jpg")
     }
-    a:hover{
+    a:hover {
         text-decoration: none;
         border-bottom: 3px solid #39ff14;
     }
-    a{
-        animation: color-change 30s infinite;    
+    a {
+        animation: color-change 30s infinite;
         font-weight: bold;
         font-size: 100%;
         font-family: 'Press Start 2P', cursive;
     }
-
     @keyframes color-change {
-        0% { color: #DF1B76; }
-        50% { color: #2DD7BB; }
-        100% { color: #DF1B76; }
-      }
-
-    #iconsElements{
-          
+        0% {
+            color: #DF1B76;
+        }
+        50% {
+            color: #2DD7BB;
+        }
+        100% {
+            color: #DF1B76;
+        }
+    }
+    #iconsElements {
         flex-direction: column;
         align-items: center;
-
-      }
-    
-    #iconsElements img{
-        margin-bottom: 50px;
-        
     }
-
+    #iconsElements img {
+        margin-bottom: 50px;
+    }
+    .navbar-toggler {
+        background-color: transparent !important;
+    }
+    #cardstyle {
+        background-color: #088404;
+    }
+    h2 {
+        font-size: 100%;
+        color: white;
+    }
+    #suscripcion {
+        margin-top: 100px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contacto {
+        margin: auto;
+        padding: 14px;
+        background-color: #2DD7BB;
+        text-align: right;
+        font-size: 13px;
+        font-family: 'Press Start 2P', cursive;
+    }
 }
-@media only screen and (min-width: 1024px){
-    .navbar-brand{
+
+@media only screen and (min-width: 1024px) {
+    .navbar-brand {
         position: absolute;
     }
-    .navbar-nav{
-        margin-left: auto;  
+    .navbar-nav {
+        margin-left: auto;
     }
-
-    .navbar-nav>li{
+    .navbar-nav>li {
         font-family: 'Press Start 2P', cursive;
         padding-left: 15px;
-        
     }
-
-    #iconsElements{
-          
-        flex-direction: row;       
-
+    #iconsElements {
+        flex-direction: row;
     }
-
-    #iconsElements img{
+    #iconsElements img {
         margin-left: 50px;
-        margin-right: 80px;
-        
+        margin-right: 50px;
+    }
+    .carousel-inner {
+        max-height: 600px !important;
+    }
+    .loginbutton {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .button {
+        position: absolute;
+        top: 0%;
+        background-color: black;
+        border: 2px solid #4CAF50;
+        color: #4CAF50;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .button1 {
+        border-radius: 10px;
+    }
+    .navbar {
+        background-color: black;
+    }
+    #suscripcion {
+        margin-top: 100px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .simg {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+    .simg>img {
+        margin: 100px 200px;
+        cursor: pointer;
+    }
+    h2 {
+        font-size: 100%;
+        color: white;
+    }
+    #carouselExampleIndicators {
+        z-index: -1;
+        width: 100%;
+        top: 0;
+    }
+    #cardstyle {
+        background-color: #088404;
+        margin-right: 50px;
     }
 }
+
+.container:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: blue;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.container:before,
+.container:after {
+    background: linear-gradient(235deg, #07247a, #413535, #07247a);
+}
+
+
