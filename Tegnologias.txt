@@ -1,0 +1,13 @@
+Mock Api ; Generacion de usuarios y login mediante AJAX
+Email Js ; Envio de Correos de fomulario 
+Ajaxs ; Tegnologia Asincrona para generar la comunicacion hacia el Mock api
+GitHub ; Controlador de versiones 
+Bostrap ; Hojas de estilo 
+Vanila Type: Libreria de Java Script 
+Jquery, Uso de Ajaxs 
+CSS; Stilos en cascada 
+Googlo Fonts ; Api de fuentes
+
+Explicar la Pagina 
+Exile games es una pagina hecha por gamer para gamer para facilitar el acceso a video juegos y contenido adicional 
+Decir que ofrecemos 
