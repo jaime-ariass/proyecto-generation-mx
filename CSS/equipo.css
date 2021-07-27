@@ -1,4 +1,4 @@
-/* Importamos una fuente mediante una url */
+    /* Importamos una fuente mediante una url */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 @media only screen and (min-width: 360px) {
@@ -159,48 +159,41 @@ body {
 .contenedor:nth-child(3):before,
 .contenedor:nth-child(3):after {
     background: linear-gradient(235deg, #A9A9A9, #010615, #660000);
-}
-
-.contenedor:nth-child(4):before,
-.contenedor:nth-child(4):after {
-    background: linear-gradient(235deg, #c49412, #010615, #f32167);
-}
-
-.contenedor .contenido {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 90px;
-    background: rgb(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.contenedor:hover .contenido {
-    opacity: 1;
-    height: 300px;
-}
-
-.contenedor .contenido h2 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
-}
-
-.contenedor.contenido h2 span {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 200;
-    letter-spacing: 2px;
-}
-
-.social-btns {
-    align-items: center;
-}
+    .contenedor:nth-child(4):before,
+    .contenedor:nth-child(4):after {
+        background: linear-gradient(235deg, #c49412, #010615, #f32167);
+    }
+    .contenedor .contenido {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: 90px;
+        background: rgb(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .contenedor:hover .contenido {
+        opacity: 1;
+        height: 300px;
+    }
+    .contenedor .contenido h2 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .contenedor.contenido h2 span {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+    .social-btns {
+        align-items: center;
+    }

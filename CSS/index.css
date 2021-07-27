@@ -9,7 +9,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 16px;
-    background: #333333;
+    background: black;
 }
 
 .container {
@@ -108,7 +108,7 @@ body .js-tilt-glare {
 
 @media only screen and (min-width: 360px) {
     .principal {
-        background-color: black;
+        background-image: url("/Recursos/bg-lista.jpg")
     }
     a:hover {
         text-decoration: none;
@@ -239,4 +239,21 @@ body .js-tilt-glare {
         background-color: #088404;
         margin-right: 50px;
     }
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: blue;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.container:before,
+.container:after {
+    background: linear-gradient(235deg, #07247a, #413535, #07247a);
 }

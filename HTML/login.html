@@ -34,9 +34,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/HTML/index.html">HOME</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/HTML/aboutus.html">ACERCA DE</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="/HTML/Lista.html">SUSCRIPCION</a>
                 </li>
@@ -150,10 +150,23 @@
         </div>
 
     </div>
-<script src="/JS/login.js"></script>
+<table>
+    <thead>
+        <tr>
+            <th>#ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
 <script src = "logicaNegociosUsuarios.js"> </script>
 <script src = "logicaInterfazInicioSesion.js"> </script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/JS/login.js"></script>
 </body>
 
 </html>
