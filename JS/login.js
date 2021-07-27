@@ -266,7 +266,7 @@ register.addEventListener('click', function(event) {
         passwordEnc = btoa(password.value);
         console.log(passwordEnc);
 
-        //event.preventDefault();
+        event.preventDefault();
 
 
     }
